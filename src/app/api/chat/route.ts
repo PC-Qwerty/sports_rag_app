@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { connectToAstraDB } from "../../../../scripts/astraDB";
 import { cleanedEnv } from "../../../../scripts/cleanedEnv";
 import type { Message } from "@/app/components/chat-area";
@@ -23,7 +24,7 @@ async function callCohere(endpoint: string, payload: any): Promise<any> {
 
 export async function POST(req: Request) {
   try {
-    const { messages, url } = await req.json();
+    const { messages } = await req.json();
     const latestMessage: Message = messages[messages.length - 1];
 
     // ===== Step 1: Generate a 4096-dim embedding using Cohere

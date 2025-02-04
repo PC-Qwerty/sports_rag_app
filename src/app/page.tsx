@@ -1,10 +1,10 @@
 "use client"
 
-import { useState } from "react"
+// import { useState } from "react"
 import { Header } from "./components/header"
 import { ChatArea } from "./components/chat-area"
-import { InputArea } from "./components/input-area"
-import { BodyDescription } from "./components/body-description"
+// import { InputArea } from "./components/input-area"
+// import { BodyDescription } from "./components/body-description"
 
 export default function Home() {
   // const [url, setUrl] = useState("")

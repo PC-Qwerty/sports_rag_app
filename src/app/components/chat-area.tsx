@@ -97,7 +97,7 @@ export function ChatArea({ url }: ChatAreaProps) {
       let currentText = "";
       const words = data.response.split(" ");
 
-      words.forEach((word, index) => {
+      words.forEach((word: string, index: number) => {
         setTimeout(() => {
           currentText += word + " ";
           setMessages((prev) =>
