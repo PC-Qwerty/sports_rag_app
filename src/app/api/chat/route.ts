@@ -51,7 +51,7 @@ export async function POST(req: Request) {
     try {
       const db = await connectToAstraDB();
       const collection = await db.collection(astra_collection);
-      const res = await collection.find(null, {
+      const res = await collection.find({}, {
         sort: { $vector: reducedEmbedding },
         limit: 10,
       });
