@@ -5,23 +5,45 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "seed": "npx ts-node ./scripts/loadScrapedDataToDB.ts",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@datastax/astra-db-ts": "^1.5.0",
+    "@huggingface/inference": "^2.8.1",
+    "@langchain/community": "^0.3.26",
+    "@langchain/core": "^0.3.32",
+    "@radix-ui/react-avatar": "^1.1.2",
+    "@radix-ui/react-scroll-area": "^1.2.2",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@upstash/redis": "^1.34.3",
+    "ai": "^4.1.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.12",
+    "lucide-react": "^0.473.0",
+    "next": "15.1.5",
+    "next-themes": "^0.4.4",
+    "openai": "^4.79.3",
+    "pca-js": "^1.0.2",
+    "puppeteer": "^24.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.5"
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
   }
 }
