@@ -2,6 +2,7 @@
 import { connectToAstraDB } from "../../../../scripts/astraDB";
 import { cleanedEnv } from "../../../../scripts/cleanedEnv";
 import type { Message } from "@/app/components/chat-area";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import PCA from "pca-js";
 
